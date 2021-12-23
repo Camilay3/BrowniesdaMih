@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+:root{
+    --color01: #DE90FF;
+    --color02: #680784;
+    --color03: #E3F2FF;
+    --color04: #FF83AE;
+    --color05: #48311F;
+    --color06: #F79437;
+    --color07: #A2B31F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background: var(--color03);
+    background: linear-gradient(to right bottom, var(--color01) 0%, var(--color03) 50%, var(--color03) 75%, white 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    min-height: 100vh;
+    max-height: 500vh;
+    width: 100%;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.titulosh{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px var(--color03);
+}
+
+.titulosh > h1{
+    font-size: 3em;
+    font-family: 'Yellowtail', cursive;
+}
+
+.titulosh > h2{
+    margin: auto;
+    font-size: 1.1em;
+}
+
+.fa-home{
+    position: absolute;
+    margin: 20px 0px 0px 40px;
+    transform: scale(2);
+    cursor: pointer;
+    color: black;
+}
+
+.fa-home:hover{
+    color: var(--color02);
+}
+
+.fa-home:active{
+    color: var(--color03);
+}
+
+main.painel{
+    display: flex;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1040px;
+    flex-direction: column;
+    margin-top: 8%;
+    /* margin-top: 13%; */
+}
+
+.bloco{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: right;
+    background-color: white;
+    padding: 20px;
+    margin: 25px 0px;
+    width: 1000px;
+    min-height: 200px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.24);
+}
+
+.bloco p{ 
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+.texto{
+    padding-right: 3%;
+    max-height: 200px;
+}
+
+.texto, .preco{
+    margin-left: -1%;
+}
+
+p{
+    margin: 5% 0% 5% 6%;
+}
+
+.preco{
+    width: 65px;
+    height: 30px;
+    padding: 0px 10px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    border: 0.5px solid var(--color02);
+}
+
+img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+section.bloco img{
+    border-radius: 8px;
+}
+
+.marca{
+    font-weight: bold;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    background-image: linear-gradient(to bottom, var(--color03) 50%, white);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color02);
+    border-radius: 10px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color03);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ball{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color02);
+    animation: subir .8s ease-in-out infinite;
+}
+
+.ball2{
+    animation-delay: .2s;
+}
+
+.ball3{
+    animation-delay: .4s;
+}
+
+@keyframes subir{
+    50%{transform: translateY(-100%);}
+}
+
+@media screen and (max-width: 1000px) {
+    .bloco{
+        width: 90%;
+        margin: 5% auto;
+        margin: 3%;
+    }
+
+    .bloco:nth-child(1){
+        margin: 10% auto 5% auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .bloco{
+        flex-direction: column;
+        width: 200px;
+        margin: 5% auto;
+        text-align: left;
+    }
+
+    .bloco:nth-child(1){
+        margin: 25% auto 5% auto;
+    }
+
+    .bloco h1, .marca{
+        text-align: center;
+    }
+
+    .titulosh h1{
+        font-size: 2em;
+    }
+
+    .titulosh h2{
+        font-size: 1em;
+    }
+
+    .fa-home{
+        transform: scale(1.5);
+        margin: 5% 0 0 10%;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylefale.css" rel="stylesheet" type="text/css"/>
+    <title>Brownies da Mih - Fale conosco</title>
+    <link rel="icon" href="imgs/logo.png">
+    <script src="https://kit.fontawesome.com/4fcf5c1ce8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="overlay">
+        <div class="loader">
+            <div class="ball ball1"></div>
+            <div class="ball ball2"></div>
+            <div class="ball ball3"></div>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <a class="link nav1" href="index.html">Home</a>
+            <a class="link nav2" href="faleconosco.html"><strong>Fale conosco</strong></a>
+            <i class="fas fa-bars" onclick="abrirMenu()"></i>
+            <img class="logoh" src="imgs/head.png" alt="logo">
+            <a class="link nav3" href="quemsomos.html">Quem somos?</a>
+            <a class="link nav4" href="novidades.html">Novidades</a>
+        </header>
+        <div class="menu-ativo" id="menu-ativo">
+            <a onclick="fecharMenu()">Fechar menu</a>
+            <a class="menu1" href="index.html"><i class="fas fa-home"></i>Home</a>
+            <a class="menu2" href="faleconosco.html"><i class="fab fa-whatsapp"></i><strong>Fale conosco</strong></a>
+            <a class="menu3" href="quemsomos.html"><i class="far fa-address-book"></i>Quem somos?</a>
+            <a class="menu4" href="novidades.html"><i class="far fa-newspaper"></i>Novidades</a>
+        </div>
+        <main>
+            <p><strong>Quer nos conhecer mais? Entre em contato pelos seguintes canais:</strong></p>
+            <abbr title="ir ao whatsapp">
+                <a href="https://wa.me/558589550569" target="_blank" class="contato">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>+55 85 8955-0569</p>
+                </a>
+            </abbr>
+            <abbr title="ir ao instagram">
+                <a href="https://www.instagram.com/browniesdamih/" target="_blank" class="contato">
+                    <i class="fab fa-instagram"></i>
+                    <p>@browniesdamih</p>
+                </a>
+            </abbr>
+            <abbr title="copiar email">
+                <a onclick="copiarEmail()" class="contato">
+                    <i class="far fa-envelope"></i>
+                    <p>browniesdamih@gmail.com</p>
+                </a>  
+            </abbr>
+        </main>
+    </div>
+<script src="scriptfale.js"></script>
+<script src="preloader.js"></script>
+<script src="sweetalert.js"></script>
+</body>
