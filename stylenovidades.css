@@ -367,4 +367,18 @@ section.bloco img{
     .bloco h1, .marca{
         text-align: center;
     }
+
+    .logoh{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .logoh{
+        width: 320px;
+    }
+
+    main.painel{
+        padding: 0;
+    }
 }
