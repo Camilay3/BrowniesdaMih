@@ -321,3 +321,13 @@ section.bloco img{
         width: 380px;
     }
 }
+
+@media screen and (max-width: 380px){
+    .logoh{
+        width: 320px;
+    }
+
+    main.painel{
+        padding: 0;
+    }
+}
