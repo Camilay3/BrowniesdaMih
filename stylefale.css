@@ -271,4 +271,8 @@ abbr{
         opacity: 1;
         margin: 15%;
     }
+
+    body{
+        width: 90%;
+    }
 }
