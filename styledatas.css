@@ -130,10 +130,10 @@ img{
     position: relative;
     width: 200px;
     height: 200px;
-    z-index: 20;
 }
 
-section.bloco img{
+.texto, img{
+    z-index: 20;
     border-radius: 8px;
 }
 
