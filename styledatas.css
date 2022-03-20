@@ -134,6 +134,9 @@ img{
 
 .texto, img{
     z-index: 20;
+}
+
+section img{
     border-radius: 8px;
 }
 
